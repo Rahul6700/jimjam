@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  
+  font-family: monospace;
+  margin: 0;
+  padding: 30px;
+  border-radius: 24px;
+  background: #181818;
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.tiptap-editor {
+  border: 0px solid;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #212121;
+  border-radius: 30px;
+ 
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  height: 1000px;
+}
+
+.markdown-editor{
+  background-color: #212121;
+  color: whitesmoke;
+  border-radius: 30px;
+  padding: 15px;
+  cursor:var(--foreground-rgb);
+  height: auto;
+
+}
+
+.tiptap.ProseMirror {
+  outline: none; 
+  border: none; 
+  background: transparent; 
+  padding: 1rem; 
+  font-size: 1rem;
+  border-radius: 4px; 
+}
