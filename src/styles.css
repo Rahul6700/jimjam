@@ -289,4 +289,23 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
+
+  /* Custom scrollbar styles */
+.markdown-editor::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.markdown-editor::-webkit-scrollbar-track {
+  background: #333; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.markdown-editor::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #333; /* Padding around the thumb */
+}
+
+.markdown-editor::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}

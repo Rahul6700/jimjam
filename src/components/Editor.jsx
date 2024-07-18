@@ -146,7 +146,7 @@ const Editor = ({ fileContent, username }) => {
   }, [fileContent, editor]);
 
   return (
-    <div className="markdown-editor tiptap">
+    <div className="markdown-editor tiptap h-screen overflow-auto bg-gray-100 p-4 rounded-lg">
       <EditorContent editor={editor} />
     </div>
   );
